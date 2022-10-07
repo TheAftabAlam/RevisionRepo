@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+  <style>
+    #container{
+        width: 60%;
+       
+        margin: auto;
+        /* border: 2px solid red; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:400px 400px 400px 400px 250px ;
+        gap: 2px;
+    }
+    #container div{
+        /* border: 1px solid green; */
+    }
+   
+    .box1 img{
+        display: block;
+        width: 100%;
+        margin: auto;
+        min-height: 400px;
+        max-height: 400px;
+    }
+    .box2 img{
+        display: block;
+        width: 100%;
+        margin: auto;
+        min-height: 400px;
+        max-height: 400px;
+    }
+    .box3{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2,1fr);
+    }
+    .box3 div img{
+        display: block;
+        width: 100%;
+        margin: auto;
+        min-height: 200px;
+        max-height: 200px;
+    }
+    .box31{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 100%;
+    }
+    .box31 div img{
+        display: block;
+        width: 100%;
+        margin: auto;
+        min-height: 200px;
+        max-height: 200px;
+    }
+    .box4{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+
+    }
+    .box4 div img{
+        display: block;
+        width: 100%;
+        margin: auto;
+        min-height: 200px;
+        max-height: 200px;
+    }
+    .box5{
+        display: grid;
+        grid-template-columns:100%;
+        grid-template-rows: repeat(2,1fr);
+    }
+    .box5 div img{
+        display: block;
+        width: 100%;
+        margin: auto;
+        min-height: 200px;
+        max-height: 200px;
+    }
+    .box6{
+        display: grid;
+        grid-template-columns:100%;
+        grid-template-rows: repeat(2,1fr);
+    }
+    .box6 div img{
+        display: block;
+        width: 100%;
+        margin: auto;
+        min-height: 200px;
+        max-height: 200px;
+    }
+    .box7 img{
+        display: block;
+        width: 100%;
+        margin: auto;
+        min-height: 400px;
+        max-height: 400px;
+    }
+    .box8  img{
+        display: block;
+        width: 100%;
+        margin: auto;
+        min-height: 400px;
+        max-height: 400px;
+    }
+    .footer{
+        width: 200%;
+        /* border: 2px solid mediumblue; */
+    }
+    .footer img{
+        display: block;
+        width: 100%;
+        margin: auto;
+        min-height: 250px;
+        max-height: 250px;
+    }
+    @media screen and (max-width: 992px) {
+
+        #container{
+        width: 60%;
+       
+        margin: auto;
+        /* border: 2px solid red; */
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:auto ;
+        gap: 2px;
+    }
+    .footer{
+        width: 100%;
+        /* border: 2px solid mediumblue; */
+    }
+    }
+
+
+
+
+   
+  </style>
+
+
+</head>
+<body>
+
+    <div id="container">
+
+        <div class="box1">
+            <img src="https://th.bing.com/th/id/R.005ee83286f3e12ed6962b82ec1e9a94?rik=EYV38iRk9ELorA&riu=http%3a%2f%2fallpicts.in%2fwp-content%2fuploads%2f2017%2f02%2fInspirational-Quotes-Wallpapers-for-Mobile-8.jpg&ehk=cE%2bLeoli5UKg5Xv9z1s9eUS2gYcDjpZ18hugznWDkFY%3d&risl=&pid=ImgRaw&r=0" alt="">
+        </div>
+        <div class="box2">
+            <img src="https://www.dreamsquote.com/wp-content/uploads/2018/10/79-Inspirational-Quotes-That-Will-Change-You-Forever-13.jpg" alt="">
+        </div>
+        <div class="box3">
+            <div>
+                <img src="https://th.bing.com/th/id/OIP.0lfCdsNi-EUB0mmqAx8ZbwHaD4?pid=ImgDet&rs=1" alt="">
+            </div>
+            <div class="box31">
+                <div>
+                    <img src="https://i.pinimg.com/originals/d8/d7/fa/d8d7fa258fb563fca991fb6ccff827e1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="https://i.pinimg.com/236x/2d/61/98/2d619864ccec505aae6ecea83cdbf3f1--gospel-quotes-mormon-quotes.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="box4">
+            <div><img src="https://cdn.quotesgram.com/small/55/10/1273539777-1304_Bill_Quote.jpg" alt=""></div>
+            <div><img src="https://th.bing.com/th/id/OIP.2vZipRYY3jJyp9wvlSMeuAD6D6?pid=ImgDet&w=1000&h=1000&rs=1" alt=""></div>
+            <div><img src="https://th.bing.com/th/id/R.93e354b3ddf83a0ba73036588ea24031?rik=yFTHAqUvbROd3g&riu=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f524dc5c5e4b09484086fc271%2f559c01a7e4b0b768fa5786c8%2f559c01bce4b0b768fa578778%2f1436287422587%2f1313%2bBill%2bQuote.jpg&ehk=0kbUBaaLnwmf2vOZdjVng%2bH9r6KjnRSK2HtVzEc2g4I%3d&risl=&pid=ImgRaw&r=0" alt=""></div>
+            <div><img src="https://i.pinimg.com/originals/22/23/c0/2223c065ca1cb190e4e1445358149f3a.jpg" alt=""></div>
+        </div>
+        <div class="box5">
+            <div>
+                <img src="https://th.bing.com/th/id/OIP.ErbLLH0kM76onz3rwxi4xwHaDf?pid=ImgDet&rs=1" alt="">
+            </div>
+            <div>
+                <img src="https://th.bing.com/th/id/OIP.ErbLLH0kM76onz3rwxi4xwHaDf?pid=ImgDet&rs=1" alt="">
+            </div>
+        </div>
+        <div class="box6">
+            <div>
+                <img src="https://th.bing.com/th/id/OIP.ErbLLH0kM76onz3rwxi4xwHaDf?pid=ImgDet&rs=1" alt="">
+            </div>
+            <div>
+                <img src="https://th.bing.com/th/id/OIP.ErbLLH0kM76onz3rwxi4xwHaDf?pid=ImgDet&rs=1" alt="">
+            </div>
+        </div>
+        <div class="box7">
+            <img src="https://i.pinimg.com/736x/ef/96/9e/ef969e258872526b21225d19052250dd.jpg" alt="">
+        </div>
+        <div class="box8">
+            <img src="https://i.pinimg.com/736x/ef/96/9e/ef969e258872526b21225d19052250dd.jpg" alt="">
+        </div>
+        <div class="footer">
+            <img src="https://d3h2k7ug3o5pb3.cloudfront.net/image/2020-01-17/9e681e60-38d3-11ea-a3fb-cfc55c1973d0.png" alt="">
+        </div>
+
+    </div>
+    
+  
+
+</body>
+</html>
