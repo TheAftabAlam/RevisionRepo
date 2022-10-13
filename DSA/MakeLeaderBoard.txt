@@ -1,0 +1,75 @@
+import java.util.*;
+public class Main {
+    static void Leaderboard(int n , String[] names, int[] marks)
+    {
+	    for(int i = 0; i < n; i++)
+	    {
+            for(int j = 0; j < n-1; j++)
+            {
+                if(names[j].compareTo(names[j+1]) > 0)
+                {
+                    swap(names, marks, j, j+1);
+                }
+            }
+        }
+        for(int i = 0; i < n; i++) 
+        {
+            for(int j = 0; j < n-1; j++) 
+            {
+                if(marks[j] < marks[j+1])
+                {
+                    swap(names, marks, j, j+1);
+                }
+            }
+        }
+        
+        int rank = 1;
+        int prev = -1;
+        int count = 0;
+        for(int i = 0; i < n; i++)
+        {
+            if(marks[i] == prev) 
+            {
+                System.out.println(rank + " " + names[i]);
+            }
+            else
+            {
+                rank += count;
+                System.out.println(rank+ " " + names[i]);
+                count = 0;
+            }
+            count++;
+            prev = marks[i];
+        }
+    }
+
+    
+    
+    static void swap(String[] name, int[] mark, int i, int j) 
+    {
+        String tmp = name[i];
+        name[i] = name[j];
+        name[j] = tmp;
+    
+        int tmp2 = mark[i];
+        mark[i] = mark[j];
+        mark[j] = tmp2;
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc =new Scanner(System.in);
+	    int n =sc.nextInt();
+	    String[] names = new String[n];
+	    int[] marks = new int[n];
+	    
+	    for(int i = 0; i < n; i++) 
+	    {
+	     names[i]=sc.next();
+	     marks[i]=sc.nextInt();
+	
+	    }
+	    Leaderboard(n,names,marks);
+	}
+	
+
+}
